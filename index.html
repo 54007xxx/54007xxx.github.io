@@ -144,6 +144,8 @@
   page-home">
     <div class="headband"></div>
 
+    <a href="https://github.com/you"><img style="position: absolute; right: 0" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_white_ffffff.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
@@ -372,8 +374,22 @@
       
         
           
-            <p>##滴滴滴滴滴滴滴滴,很简单哦</p>
-
+            <h2 id="devtools-安装"><a href="#devtools-安装" class="headerlink" title="devtools 安装"></a>devtools 安装</h2><h2 id="安装-React-devtools"><a href="#安装-React-devtools" class="headerlink" title="安装 React-devtools"></a>安装 React-devtools</h2><p>1.去git上下载react-devtools文件到本地，下载地址： <a href="https://github.com/facebook/react-devtools" target="_blank" rel="noopener">https://github.com/facebook/react-devtools</a> ；<br>可以直接下载zip安装包解压，或者通过git clone来将项目拷贝到本地<br>git clone <a href="https://github.com/facebook/react-devtools.git" target="_blank" rel="noopener">https://github.com/facebook/react-devtools.git</a><br>2.进入react-devtools文件夹，用npm安装依赖，这里推荐临时使用淘宝镜像，快速一点。<br>npm –registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a> install<br>3.安装依赖成功后，我们便可以打包一份扩展程序出来。运行<br>npm run build:extension:chrome<br>4.并且会在你的项目目录中生成一个新的文件夹，react-devtools -&gt; shells -&gt; chrome -&gt; build -&gt; unpacked文件夹<br>5.打开chrome扩展程序chrome://extensions/，加载已解压的扩展程序，选择第3步中的生成的unpacked文件夹。这时就会添加一个新的扩展程序react-devtools，并在你的浏览器右上角会有个react标志, 就表示成功啦。</p>
+<h2 id="安装Vue-devtools"><a href="#安装Vue-devtools" class="headerlink" title="安装Vue-devtools"></a>安装Vue-devtools</h2><p>vue-devtools的安装与使用<br>一.在github上下载压缩包，github下载地址：<a href="https://github.com/vuejs/vue-devtools" target="_blank" rel="noopener">https://github.com/vuejs/vue-devtools</a></p>
+<p>二.解压到本地的某盘</p>
+<p>三.用你的npm中进入该文件夹下</p>
+<p>四.依次输:</p>
+<p>1:npm install  （如果在这部报错的话，就改用cnpm install。  cnpm需要安装 安装地址）</p>
+<p>2:npm run build         (这一步一定不要忘了，没有执行这一步的话，项目文件夹shells&gt;chrome文件夹里会少一个src文件夹,如下图)</p>
+<p>vue-devtools的安装与使用</p>
+<p>五：修改shells&gt;chrome文件夹下的mainifest.json 中的persistant为true</p>
+<p>vue-devtools的安装与使用</p>
+<p>六：我们找到谷歌浏览器的扩展程序功能，勾选开发者模式，然后我们将插件文件夹里的shells&gt;chorme文件夹直接拖到页面中，完成安装。</p>
+<p>（注意：如果我们没有执行第四部的npm run build，在这里会报错：无法加载背景脚本”build/background.js”）</p>
+<p>七：在插件的目录下执行npm run dev，这个时候我们的插件就可以运行了,打开localhost:8080可以看到插件已经安装并运行了。</p>
+<p>vue-devtools的安装与使用</p>
+<p>八：我们在打开本地的其他项目时，就不需要在vue-devtools文件夹下执行npm run dev了，因为这个插件已经安装在浏览器中。接下来就愉快的调试你的vue项目吧。</p>
+<!-- 博客园 -->
           
         
       
@@ -478,7 +494,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/wieldy/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -705,3 +721,4 @@
 
 </body>
 </html>
+<script type="text/javascript" src="/js/src/love.js"></script>
